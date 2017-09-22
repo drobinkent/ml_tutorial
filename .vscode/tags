@@ -1,0 +1,12 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+first.py	../first.py	1;"	kind:file	line:1
+input_data	../first.py	/^from tensorflow.examples.tutorials.mnist import input_data$/;"	kind:namespace	line:1
+res	../first.py	/^res = tf.add(6,8)$/;"	kind:variable	line:6
+sess	../first.py	/^sess = tf.Session()$/;"	kind:variable	line:7
+ssl	../first.py	/^import ssl$/;"	kind:namespace	line:2
+tf	../first.py	/^import tensorflow as tf$/;"	kind:namespace	line:3
