@@ -1,9 +1,17 @@
-from tensorflow.examples.tutorials.mnist import input_data
-import ssl
 import tensorflow as tf
-#mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
-res = tf.add(6,8)
-sess = tf.Session()
-print(sess.run(res))
-sess.close()
+
+
+x = [1, 2, 3]
+y = [4, 5]
+zipped = zip(x, y)
+print(zipped)
+
+for x in zipped : 
+    print(x)
+
+
+x = tf.read_file("boston_housing.csv")
+with tf.Session() as sess:
+    sess.run(x)
+    print(x.get_shape())

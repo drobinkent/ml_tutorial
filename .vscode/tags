@@ -4,9 +4,21 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+X	../gradient_descent.py	/^X = tf.placeholder("float") # create symbolic variables$/;"	kind:variable	line:21
+Y	../gradient_descent.py	/^Y = tf.placeholder("float")$/;"	kind:variable	line:22
+cost	../gradient_descent.py	/^cost = tf.square(Y - y_model) # use square error for cost function$/;"	kind:variable	line:32
 first.py	../first.py	1;"	kind:file	line:1
-input_data	../first.py	/^from tensorflow.examples.tutorials.mnist import input_data$/;"	kind:namespace	line:1
-res	../first.py	/^res = tf.add(6,8)$/;"	kind:variable	line:6
-sess	../first.py	/^sess = tf.Session()$/;"	kind:variable	line:7
-ssl	../first.py	/^import ssl$/;"	kind:namespace	line:2
-tf	../first.py	/^import tensorflow as tf$/;"	kind:namespace	line:3
+gradient_descent.py	../gradient_descent.py	1;"	kind:file	line:1
+model	../gradient_descent.py	/^def model(X, w):$/;"	kind:function	line:25
+np	../gradient_descent.py	/^import numpy as np$/;"	kind:namespace	line:12
+tf	../first.py	/^import tensorflow as tf$/;"	kind:namespace	line:1
+tf	../gradient_descent.py	/^import tensorflow as tf$/;"	kind:namespace	line:11
+trX	../gradient_descent.py	/^trX = np.linspace(-1, 1, 101)$/;"	kind:variable	line:14
+trY	../gradient_descent.py	/^trY = 2 * trX + np.random.randn(*trX.shape) * 0.33 # create a y value which is approximately linear but with some random noise$/;"	kind:variable	line:15
+train_op	../gradient_descent.py	/^train_op = tf.train.GradientDescentOptimizer(0.01).minimize(cost) # construct an optimizer to minimize cost and fit line to my data$/;"	kind:variable	line:34
+w	../gradient_descent.py	/^w = tf.Variable(0.0, name="weights") # create a shared variable (like theano.shared) for the weight matrix$/;"	kind:variable	line:29
+x	../first.py	/^x = [1, 2, 3]$/;"	kind:variable	line:5
+x	../first.py	/^x = tf.read_file("boston_housing.csv")$/;"	kind:variable	line:14
+y	../first.py	/^y = [4, 5]$/;"	kind:variable	line:6
+y_model	../gradient_descent.py	/^y_model = model(X, w)$/;"	kind:variable	line:30
+zipped	../first.py	/^zipped = zip(x, y)$/;"	kind:variable	line:7
