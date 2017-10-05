@@ -5,20 +5,42 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 X	../gradient_descent.py	/^X = tf.placeholder("float") # create symbolic variables$/;"	kind:variable	line:21
+X	../linear_regression_assignement.py	/^X = tf.placeholder("float")$/;"	kind:variable	line:11
 Y	../gradient_descent.py	/^Y = tf.placeholder("float")$/;"	kind:variable	line:22
+Y	../linear_regression_assignement.py	/^Y = tf.placeholder("float")$/;"	kind:variable	line:12
+alpha	../linear_regression_assignement.py	/^alpha = 0.01$/;"	kind:variable	line:7
+c	../linear_regression_assignement.py	/^            c = sess.run(error, feed_dict={training_data_size: n_samples,X: train_X, Y:train_Y})$/;"	kind:variable	line:43
 cost	../gradient_descent.py	/^cost = tf.square(Y - y_model) # use square error for cost function$/;"	kind:variable	line:32
+display_step	../linear_regression_assignement.py	/^display_step=5$/;"	kind:variable	line:26
+error	../linear_regression_assignement.py	/^error = tf.reduce_sum(tf.pow(y_predicted-Y, 2))\/(2*training_data_size)$/;"	kind:variable	line:21
 first.py	../first.py	1;"	kind:file	line:1
 gradient_descent.py	../gradient_descent.py	1;"	kind:file	line:1
+init	../linear_regression_assignement.py	/^init = tf.global_variables_initializer()$/;"	kind:variable	line:33
+iteration_number	../linear_regression_assignement.py	/^iteration_number = 1000$/;"	kind:variable	line:8
+linear_regression_assignement.py	../linear_regression_assignement.py	1;"	kind:file	line:1
+linear_regression_optimizer	../linear_regression_assignement.py	/^linear_regression_optimizer = tf.train.GradientDescentOptimizer(alpha).minimize(error)$/;"	kind:variable	line:23
+matplotlib	../linear_regression_assignement.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
 model	../gradient_descent.py	/^def model(X, w):$/;"	kind:function	line:25
+n_samples	../linear_regression_assignement.py	/^n_samples = train_X.shape[0]$/;"	kind:variable	line:31
 np	../gradient_descent.py	/^import numpy as np$/;"	kind:namespace	line:12
+numpy	../linear_regression_assignement.py	/^import numpy$/;"	kind:namespace	line:2
+plt	../linear_regression_assignement.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+random_number_generator	../linear_regression_assignement.py	/^random_number_generator = numpy.random$/;"	kind:variable	line:6
 tf	../first.py	/^import tensorflow as tf$/;"	kind:namespace	line:1
 tf	../gradient_descent.py	/^import tensorflow as tf$/;"	kind:namespace	line:11
+tf	../linear_regression_assignement.py	/^import tensorflow as tf$/;"	kind:namespace	line:1
+theta_one	../linear_regression_assignement.py	/^theta_one = tf.Variable(random_number_generator.randn(), name="theta_one")$/;"	kind:variable	line:14
+theta_zero	../linear_regression_assignement.py	/^theta_zero = tf.Variable(random_number_generator.randn(), name="theta_zero")$/;"	kind:variable	line:15
 trX	../gradient_descent.py	/^trX = np.linspace(-1, 1, 101)$/;"	kind:variable	line:14
 trY	../gradient_descent.py	/^trY = 2 * trX + np.random.randn(*trX.shape) * 0.33 # create a y value which is approximately linear but with some random noise$/;"	kind:variable	line:15
+train_X	../linear_regression_assignement.py	/^train_X = numpy.asarray([3.3,4.4,5.5,6.71,6.93,4.168,9.779,6.182,7.59,2.167,$/;"	kind:variable	line:27
+train_Y	../linear_regression_assignement.py	/^train_Y = numpy.asarray([1.7,2.76,2.09,3.19,1.694,1.573,3.366,2.596,2.53,1.221,$/;"	kind:variable	line:29
 train_op	../gradient_descent.py	/^train_op = tf.train.GradientDescentOptimizer(0.01).minimize(cost) # construct an optimizer to minimize cost and fit line to my data$/;"	kind:variable	line:34
+training_data_size	../linear_regression_assignement.py	/^training_data_size = tf.placeholder("float")$/;"	kind:variable	line:13
 w	../gradient_descent.py	/^w = tf.Variable(0.0, name="weights") # create a shared variable (like theano.shared) for the weight matrix$/;"	kind:variable	line:29
 x	../first.py	/^x = [1, 2, 3]$/;"	kind:variable	line:5
 x	../first.py	/^x = tf.read_file("boston_housing.csv")$/;"	kind:variable	line:14
 y	../first.py	/^y = [4, 5]$/;"	kind:variable	line:6
 y_model	../gradient_descent.py	/^y_model = model(X, w)$/;"	kind:variable	line:30
+y_predicted	../linear_regression_assignement.py	/^y_predicted = tf.add(tf.multiply(X,theta_one ), theta_zero)$/;"	kind:variable	line:18
 zipped	../first.py	/^zipped = zip(x, y)$/;"	kind:variable	line:7
